@@ -1,0 +1,70 @@
+.street {
+  transform-origin: center center;
+  animation: spin 1s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+}
+
+@keyframes patinete {
+  to {
+    transform: scale(0.4) translateY(130%) translateX(370%);
+  }
+
+  from {
+    transform: scale(0.4) translateY(130%) translateX(-150%);
+  }
+}
+@keyframes police {
+  to {
+    fill: red;
+  }
+
+  from {
+    fill: blue;
+  }
+}
+
+@keyframes dance-fill {
+  20% {
+    fill: #946bda;
+  }
+  40% {
+    fill: #3eb73a;
+  }
+  60% {
+    fill: #ffeb3b;
+  }
+  100% {
+    fill: #03a9f4;
+  }
+}
+
+@keyframes dance {
+  to {
+    transform-origin: bottom center;
+    transform: matrix(1, 0.001, 0, 1, 323.414, 334.508);
+  }
+
+  from {
+    transform-origin: bottom center;
+    transform: matrix(1, -0.001, 0, 1, 323.414, 334.508);
+  }
+}
+@keyframes spin {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+@media (max-width: 981px) {
+  @keyframes patinete {
+    to {
+      transform: scale(0.4) translateY(150px) translateX(270%);
+    }
+
+    from {
+      transform: scale(0.4) translateY(150px) translateX(-170%);
+    }
+  }
+}
