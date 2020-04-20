@@ -16,7 +16,7 @@ function loadFunction(e) {
   btnAman.addEventListener("click", function (e) {
     document
       .querySelector('meta[name="theme-color"]')
-      .setAttribute("content", " #2d5d63");
+      .setAttribute("content", "#2d5d63");
     nuvemEsquerda.style.transform = "translate(120px, 25px)";
     nuvemDireita.style.transform = "translate(1200px, 95.937px)";
     Object.assign(astro.style, css);
@@ -29,7 +29,7 @@ function loadFunction(e) {
   btnAnoi.addEventListener("click", function (e) {
     document
       .querySelector('meta[name="theme-color"]')
-      .setAttribute("content", " #39cfdc");
+      .setAttribute("content", "#39cfdc");
     if (astro.attributes.getNamedItem("style")) {
       nuvemEsquerda.attributes.removeNamedItem("style");
       nuvemDireita.attributes.removeNamedItem("style");
