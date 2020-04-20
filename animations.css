@@ -40,12 +40,72 @@
 @keyframes dance {
   to {
     transform-origin: bottom center;
-    transform: matrix(1, 0.001, 0, 1, 323.414, 334.508);
+    transform: matrix(1, 0.01, 0, 1, 323.414, 334.508);
   }
 
   from {
     transform-origin: bottom center;
-    transform: matrix(1, -0.001, 0, 1, 323.414, 334.508);
+    transform: matrix(1, -0.01, 0, 1, 323.414, 334.508);
+  }
+}
+@keyframes ship {
+  20% {
+    transform: translate3d(302%, 57px, 10px);
+  }
+  30% {
+    transform: translate3d(302%, 100px, 10px);
+  }
+  40% {
+    transform: translate3d(1%, 57px, 10px);
+  }
+  50% {
+    transform: translate3d(-502%, 237px, 10px);
+  }
+  60% {
+    transform: translate3d(-502%, 217px, 10px);
+  }
+  70% {
+    transform: translate3d(-502%, 237px, 10px);
+  }
+  80% {
+    transform: translate3d(-502%, 217px, 10px);
+  }
+  95% {
+    transform: translate3d(-502%, 237px, 10px);
+  }
+  100% {
+    transform: translate3d(1%, 57px, 10px);
+  }
+}
+@media (max-width: 981px) {
+  @keyframes ship {
+    20% {
+      transform: translate3d(302%, 57px, 10px);
+    }
+    30% {
+      transform: translate3d(302%, 100px, 10px);
+    }
+    40% {
+      transform: translate3d(1%, 57px, 10px);
+    }
+    50% {
+      transform: translate3d(-200%, 237px, 10px);
+    }
+    60% {
+      transform: translate3d(-200%, 217px, 10px);
+    }
+    70% {
+      transform: translate3d(-200%, 237px, 10px);
+    }
+    80% {
+      transform: translate3d(-200%, 217px, 10px);
+    }
+    95% {
+      transform: translate3d(-200%, 237px, 10px);
+    }
+    100% {
+      transform: translate3d(1%, 57px, 10px);
+    }
   }
 }
 @keyframes spin {
@@ -54,6 +114,28 @@
   }
   100% {
     transform: translateY(1px);
+  }
+}
+@keyframes plane {
+  from {
+    left: -40%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes dog {
+  20% {
+    bottom: -100%;
+  }
+  50% {
+    bottom: -10%;
+  }
+  70% {
+    bottom: -8%;
+  }
+  100% {
+    bottom: -100%;
   }
 }
 

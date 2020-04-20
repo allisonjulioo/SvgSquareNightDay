@@ -20,11 +20,11 @@ html {
   overflow: hidden;
 }
 
-.noite svg {
+.noite #svg-background {
   background: #2d5d63;
 }
 
-.dia svg {
+.dia #svg-background {
   background: #39cfdc;
 }
 
@@ -50,14 +50,14 @@ html {
     display: flex;
     align-items: center;
     bottom: 0;
-    background: #cff3ff;
     width: 100%;
     margin-left: 0 !important;
     justify-content: center;
   }
 }
 
-svg {
+#svg-background,
+#svg-cara {
   position: absolute;
   z-index: 0;
   min-height: 100vh;
@@ -93,7 +93,55 @@ rect.cls-4 {
   transition: all 2s ease-in-out;
 }
 
-.noite #Caminho_42 {
+#svg-ship {
+  position: absolute;
+  z-index: +5;
+  transition: all 1s ease;
+  transition-delay: 1s;
+  transform: translate3d(1%, -157px, 10px);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.noite #svg-ship {
+  transition: all 1s ease;
+  transform: translate3d(1%, 57px, 10px);
+  animation: ship 10s ease-in-out infinite 1s;
+}
+@media (max-width: 981px) {
+  #svg-ship {
+    width: 45px;
+    height: 45px;
+  }
+}
+#svg-plane {
+  position: absolute;
+  transition: all 1s linear;
+  left: -40%;
+  top: 10%;
+  z-index: +2;
+  width: 65px;
+  height: 65px;
+}
+.dia #svg-plane {
+  animation: plane 10s linear 3s;
+}
+#svg-dog {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: +10;
+  width: 360px;
+}
+@media (max-width: 981px) {
+  #svg-dog {
+    width: 300px;
+  }
+}
+.dia #svg-dog {
+  animation: dog 10s ease-out 7s;
 }
 .noite #Caminho_42:before {
   -webkit-filter: drop-shadow(13px 13px 12px rgba(255, 255, 255, 0.7));
@@ -248,7 +296,7 @@ rect.cls-4 {
 
 #svg-cara #OBJECTS {
   transform: scale(0.4) translateY(130%) translateX(-170%);
-  animation: patinete 7s ease infinite 2s;
+  animation: patinete 7s ease 2s;
 }
 
 @media (max-width: 981px) {
@@ -258,6 +306,6 @@ rect.cls-4 {
 
   #svg-cara #OBJECTS {
     transform: scale(0.4) translateY(150px) translateX(-170%);
-    animation: patinete 7s ease infinite 2s;
+    animation: patinete 7s ease 2s;
   }
 }
