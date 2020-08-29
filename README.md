@@ -1,7 +1,7 @@
-# SvgSquareNightDay
-manipulando o comportamento do SVG via javascript
+# Square Night Day
+Website concept manipulating SVG file using css and javascript 
 
-[Veja a demonstração](https://allisonjulioo.github.io/SvgSquareNightDay/)
+[See concept demo](https://allisonjulioo.github.io/SvgSquareNightDay/)
 
 
 
